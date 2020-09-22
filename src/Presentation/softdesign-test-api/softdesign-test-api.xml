@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>softdesign-test-api</name>
+    </assembly>
+    <members>
+        <member name="M:softdesign_test_api.Controllers.ApplicationController.Get">
+            <summary>
+            Get all stored applications
+            </summary>
+            <returns>List of all applications</returns>
+        </member>
+        <member name="M:softdesign_test_api.Controllers.ApplicationController.Get(System.String)">
+            <summary>
+            Get an specific application by id
+            </summary>
+            <param name="id">Application id to be filtered</param>
+            <returns>Return the filtered application</returns>
+        </member>
+        <member name="M:softdesign_test_api.Controllers.ApplicationController.Post(softdesign_test_domain.Models.DTOs.ApplicationDTO)">
+            <summary>
+            Insert a new application
+            </summary>
+            <param name="applicationDTO">Body of application to be inserted</param>
+            <returns>Success/error message</returns>
+        </member>
+        <member name="M:softdesign_test_api.Controllers.ApplicationController.Patch(System.String,softdesign_test_domain.Models.DTOs.ApplicationDTO)">
+            <summary>
+            Update an already stored application 
+            </summary>
+            <param name="id">Application Id</param>
+            <param name="applicationDTO">New body values</param>
+            <returns>Success/error message</returns>
+        </member>
+        <member name="M:softdesign_test_api.Controllers.ApplicationController.Delete(System.String)">
+            <summary>
+            Delete an application by id
+            </summary>
+            <param name="id">Application Id</param>
+            <returns>Success/error message</returns>
+        </member>
+    </members>
+</doc>
