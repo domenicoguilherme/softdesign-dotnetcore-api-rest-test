@@ -37,7 +37,7 @@ namespace softdesign_test_api
             var mongoDbDatabase = Configuration.GetValue<string>("MongoConnection:Database");
             var mongoDbConnectionString = Configuration.GetValue<string>("MongoConnection:ConnectionString");
 
-            Dependency.Register(services, mongoDbDatabase, mongoDbConnectionString);
+            Dependency.RegisterAll(services, mongoDbDatabase, mongoDbConnectionString);
 
             services.AddSwaggerGen(c =>
             {
